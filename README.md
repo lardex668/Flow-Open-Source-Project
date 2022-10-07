@@ -1,5 +1,4 @@
-# Flow-Open-Source-Project
-Flowgorithm OS home
+# Flowgorithm OS
 
 Premetto che non so lavorare con il linguaggio C++, quindi la versione eseguibile di Windows è un po' buggata, quindi nel notepad, non inserite gli spazi, altrimenti il programma si chiuderà, inoltre non selezionate debug mode, ve lo sconsiglio, tutti i programmi che cercherete di aprire si chiuderanno! Ho semplicemente convertito il mio diagramma a blocchi a C++ grazie ad una funzione di Flowgorithm, poi ho compilato il tutto con Visual Studio 2022. La versione Flowgorithm, invece è più bella graficamente e completamente funzionale!! (è presente un bug pure qui, cioè che se vi ripete "Inserisci un comando" reinserite il comando, funzionerà.
 Se volete apportare delle modifiche, potete farlo sul codice sorgente in c++ (per costruire eseguibile windows) oppure sul progetto di flowgorithm (modifica del diagramma a blocchi), così potrete fare un fork del progetto e caricarci le vostre versioni modificate!
