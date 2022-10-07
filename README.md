@@ -6,7 +6,7 @@ Questo è un progetto open source che implica la costruzione di programmi su Flo
 
 # Flowgorithm OS
 
-Flowgorithm OS fa parte del FOSP, Flowgorithm Open Source Project.
+Flowgorithm OS fa parte del FOSP, Flow Open Source Project.
 
 Questo sistema operativo si ispira a MS-DOS (essendo a riga di comando), Windows (notepad e start menu) e Linux (livecd).
 
