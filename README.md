@@ -31,4 +31,4 @@ P.S. E' in arrivo la Developers Edition, con strumenti per gli sviluppatori! E F
 
 # Flowgorithm OS 2.0
 
-Coming soon...
+In arrivo prossimamente..
