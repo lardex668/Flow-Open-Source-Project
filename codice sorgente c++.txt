@@ -1,0 +1,509 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <cstdlib>
+#include <cmath>
+
+using namespace std;
+
+// Headers
+string toString (double);
+int toInt (string);
+double toDouble (string);
+
+int main() {
+    int sel;
+    string com;
+    string file1;
+    string comint;
+    
+    cout << "Flowgorithm OS Setup" << endl;
+    cout << "Scegli un' opzione:    0: Flowgorithm OS livecd    1: Debug mode    2: Esci dal programma di installazione  " << endl;
+    cin >> sel;
+    if (sel == 0) {
+        cout << "Flowgorithm OS 1.0" << endl;
+        cout << "Per visualizzare la lista dei comandi digita help." << endl;
+        cout << "Inserisci un comando:" << endl;
+        cin >> com;
+        if (com == "ver") {
+            cout << "Flowgorithm OS 1.0  ALL RIGHTS RESERVED" << endl;
+            comint = "rspgrm";
+            while (comint == "rspgrm") {
+                cout << "Inserisci un comando:" << endl;
+                cin >> com;
+                while (com == "notepad") {
+                    cout << "Flowpad 1.0" << endl;
+                    cout << "Vuoi aprire un file oppure partire da zero?  digita apri per aprire un file, altrimenti nuovo." << endl;
+                    cin >> com;
+                    if (com == "apri") {
+                        cout << file1 << endl;
+                        cout << "Vuoi chiudere il programma?" << endl;
+                        cin >> com;
+                        comint = "rsntpd";
+                        while (comint == "rsntpd") {
+                            while (com == "si") {
+                                comint = "exit";
+                                cout << "Inserisci un comando:" << endl;
+                                cin >> com;
+                            }
+                            while (com == "no") {
+                                cout << "Digita un testo." << endl;
+                                cin >> file1;
+                                cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                cin >> com;
+                            }
+                        }
+                        comint = "rspgrm";
+                    } else {
+                        if (com == "nuovo") {
+                            cout << "Digita un testo." << endl;
+                            cin >> file1;
+                            cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                            cin >> com;
+                            comint = "rsntpd";
+                            while (comint == "rsntpd") {
+                                while (com == "si") {
+                                    comint = "exit";
+                                    cout << "Inserisci un comando:" << endl;
+                                    cin >> com;
+                                }
+                                while (com == "no") {
+                                    cout << "Digita un testo." << endl;
+                                    cin >> file1;
+                                    cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                    cin >> com;
+                                }
+                            }
+                            comint = "rspgrm";
+                        } else {
+                            cout << "Comando non implementato." << endl;
+                        }
+                    }
+                }
+                while (com == "help") {
+                    cout << "ver - informazioni sul sistema operativo    help - elenco dei comandi    notepad - semplice editor di testo    shutdown - arresta il sistema  " << endl;
+                    cout << "Inserisci un comando:" << endl;
+                    cin >> com;
+                }
+                while (com == "ver") {
+                    cout << "Flowgorithm OS 1.0  ALL RIGHTS RESERVED" << endl;
+                    cout << "Inserisci un comando:" << endl;
+                    cin >> com;
+                }
+                while (com == "shutdown") {
+                    cout << "Arresto del sistema" << endl;
+                }
+            }
+        } else {
+            if (com == "help") {
+                cout << "ver - informazioni sul sistema operativo    help - elenco dei comandi    notepad - semplice editor di testo    shutdown - arresta il sistema  " << endl;
+                comint = "rspgrm";
+                
+                // rspgrm ripete la sequenza di programmi
+                // comint è un comando interno, com è un comando immesso da tastiera
+                while (comint == "rspgrm") {
+                    cout << "Inserisci un comando:" << endl;
+                    cin >> com;
+                    while (com == "notepad") {
+                        cout << "Flowpad 1.0" << endl;
+                        cout << "Vuoi aprire un file oppure partire da zero?  digita apri per aprire un file, altrimenti nuovo." << endl;
+                        cin >> com;
+                        if (com == "apri") {
+                            cout << file1 << endl;
+                            cout << "Vuoi chiudere il programma?" << endl;
+                            cin >> com;
+                            comint = "rsntpd";
+                            while (comint == "rsntpd") {
+                                while (com == "si") {
+                                    comint = "exit";
+                                    cout << "Inserisci un comando:" << endl;
+                                    cin >> com;
+                                }
+                                while (com == "no") {
+                                    cout << "Digita un testo." << endl;
+                                    cin >> file1;
+                                    cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                    cin >> com;
+                                }
+                            }
+                            comint = "rspgrm";
+                        } else {
+                            if (com == "nuovo") {
+                                cout << "Digita un testo." << endl;
+                                cin >> file1;
+                                cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                cin >> com;
+                                comint = "rsntpd";
+                                while (comint == "rsntpd") {
+                                    while (com == "si") {
+                                        comint = "exit";
+                                        cout << "Inserisci un comando:" << endl;
+                                        cin >> com;
+                                    }
+                                    while (com == "no") {
+                                        cout << "Digita un testo." << endl;
+                                        cin >> file1;
+                                        cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                        cin >> com;
+                                    }
+                                }
+                                comint = "rspgrm";
+                            } else {
+                                cout << "Comando non implementato." << endl;
+                            }
+                        }
+                    }
+                    while (com == "help") {
+                        cout << "ver - informazioni sul sistema operativo    help - elenco dei comandi    notepad - semplice editor di testo    shutdown - arresta il sistema  " << endl;
+                        cout << "Inserisci un comando:" << endl;
+                        cin >> com;
+                    }
+                    while (com == "ver") {
+                        cout << "Flowgorithm OS 1.0  ALL RIGHTS RESERVED" << endl;
+                        cout << "Inserisci un comando:" << endl;
+                        cin >> com;
+                    }
+                    while (com == "shutdown") {
+                        cout << "Arresto del sistema" << endl;
+                    }
+                }
+            } else {
+                if (com == "notepad") {
+                    cout << "Flowpad 1.0" << endl;
+                    cout << "Vuoi aprire un file oppure partire da zero?  digita apri per aprire un file, altrimenti nuovo." << endl;
+                    cin >> com;
+                    if (com == "apri") {
+                        cout << file1 << endl;
+                        cout << "Vuoi chiudere il programma?" << endl;
+                        cin >> com;
+                        comint = "rsntpd";
+                        while (comint == "rsntpd") {
+                            while (com == "si") {
+                                comint = "exit";
+                                cout << "Inserisci un comando:" << endl;
+                                cin >> com;
+                            }
+                            while (com == "no") {
+                                cout << "Digita un testo." << endl;
+                                cin >> file1;
+                                cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                cin >> com;
+                            }
+                        }
+                        comint = "rspgrm";
+                        while (comint == "rspgrm") {
+                            cout << "Inserisci un comando:" << endl;
+                            cin >> com;
+                            while (com == "notepad") {
+                                cout << "Flowpad 1.0" << endl;
+                                cout << "Vuoi aprire un file oppure partire da zero?  digita apri per aprire un file, altrimenti nuovo." << endl;
+                                cin >> com;
+                                if (com == "apri") {
+                                    cout << file1 << endl;
+                                    cout << "Vuoi chiudere il programma?" << endl;
+                                    cin >> com;
+                                    comint = "rsntpd";
+                                    while (comint == "rsntpd") {
+                                        while (com == "si") {
+                                            comint = "exit";
+                                            cout << "Inserisci un comando:" << endl;
+                                            cin >> com;
+                                        }
+                                        while (com == "no") {
+                                            cout << "Digita un testo." << endl;
+                                            cin >> file1;
+                                            cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                            cin >> com;
+                                        }
+                                    }
+                                    comint = "rspgrm";
+                                } else {
+                                    if (com == "nuovo") {
+                                        cout << "Digita un testo." << endl;
+                                        cin >> file1;
+                                        cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                        cin >> com;
+                                        comint = "rsntpd";
+                                        while (comint == "rsntpd") {
+                                            while (com == "si") {
+                                                comint = "exit";
+                                                cout << "Inserisci un comando:" << endl;
+                                                cin >> com;
+                                            }
+                                            while (com == "no") {
+                                                cout << "Digita un testo." << endl;
+                                                cin >> file1;
+                                                cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                                cin >> com;
+                                            }
+                                        }
+                                        comint = "rspgrm";
+                                    } else {
+                                        cout << "Comando non implementato." << endl;
+                                    }
+                                }
+                            }
+                            while (com == "help") {
+                                cout << "ver - informazioni sul sistema operativo    help - elenco dei comandi    notepad - semplice editor di testo    shutdown - arresta il sistema  " << endl;
+                                cout << "Inserisci un comando:" << endl;
+                                cin >> com;
+                            }
+                            while (com == "ver") {
+                                cout << "Flowgorithm OS 1.0  ALL RIGHTS RESERVED" << endl;
+                                cout << "Inserisci un comando:" << endl;
+                                cin >> com;
+                            }
+                            while (com == "shutdown") {
+                                cout << "Arresto del sistema" << endl;
+                            }
+                        }
+                    } else {
+                        if (com == "nuovo") {
+                            cout << "Digita un testo." << endl;
+                            cin >> file1;
+                            cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                            cin >> com;
+                            comint = "rsntpd";
+                            while (comint == "rsntpd") {
+                                if (com == "si") {
+                                    comint = "rspgrm";
+                                }
+                                while (com == "no") {
+                                    cout << "Digita un testo." << endl;
+                                    cin >> file1;
+                                    cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                    cin >> com;
+                                }
+                            }
+                            while (comint == "rspgrm") {
+                                cout << "Inserisci un comando:" << endl;
+                                cin >> com;
+                                while (com == "notepad") {
+                                    cout << "Flowpad 1.0" << endl;
+                                    cout << "Vuoi aprire un file oppure partire da zero?  digita apri per aprire un file, altrimenti nuovo." << endl;
+                                    cin >> com;
+                                    if (com == "apri") {
+                                        cout << file1 << endl;
+                                        cout << "Vuoi chiudere il programma?" << endl;
+                                        cin >> com;
+                                        comint = "rsntpd";
+                                        while (comint == "rsntpd") {
+                                            while (com == "si") {
+                                                comint = "exit";
+                                                cout << "Inserisci un comando:" << endl;
+                                                cin >> com;
+                                            }
+                                            while (com == "no") {
+                                                cout << "Digita un testo." << endl;
+                                                cin >> file1;
+                                                cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                                cin >> com;
+                                            }
+                                        }
+                                        comint = "rspgrm";
+                                    } else {
+                                        if (com == "nuovo") {
+                                            cout << "Digita un testo." << endl;
+                                            cin >> file1;
+                                            cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                            cin >> com;
+                                            comint = "rsntpd";
+                                            while (comint == "rsntpd") {
+                                                while (com == "si") {
+                                                    comint = "exit";
+                                                    cout << "Inserisci un comando:" << endl;
+                                                    cin >> com;
+                                                }
+                                                while (com == "no") {
+                                                    cout << "Digita un testo." << endl;
+                                                    cin >> file1;
+                                                    cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                                    cin >> com;
+                                                }
+                                            }
+                                            comint = "rspgrm";
+                                        } else {
+                                            cout << "Comando non implementato." << endl;
+                                        }
+                                    }
+                                }
+                                while (com == "help") {
+                                    cout << "ver - informazioni sul sistema operativo    help - elenco dei comandi    notepad - semplice editor di testo    shutdown - arresta il sistema  " << endl;
+                                    cout << "Inserisci un comando:" << endl;
+                                    cin >> com;
+                                }
+                                while (com == "ver") {
+                                    cout << "Flowgorithm OS 1.0  ALL RIGHTS RESERVED" << endl;
+                                    cout << "Inserisci un comando:" << endl;
+                                    cin >> com;
+                                }
+                                while (com == "shutdown") {
+                                    cout << "Arresto del sistema" << endl;
+                                }
+                            }
+                        } else {
+                            cout << "Comando non implementato." << endl;
+                        }
+                    }
+                } else {
+                    if (com == "shutdown") {
+                        cout << "Arresto del sistema" << endl;
+                    } else {
+                        cout << "Comando non implementato." << endl;
+                        comint = "rspgrm";
+                        while (comint == "rspgrm") {
+                            cout << "Inserisci un comando:" << endl;
+                            cin >> com;
+                            while (com == "notepad") {
+                                cout << "Flowpad 1.0" << endl;
+                                cout << "Vuoi aprire un file oppure partire da zero?  digita apri per aprire un file, altrimenti nuovo." << endl;
+                                cin >> com;
+                                if (com == "apri") {
+                                    cout << file1 << endl;
+                                    cout << "Vuoi chiudere il programma?" << endl;
+                                    cin >> com;
+                                    comint = "rsntpd";
+                                    while (comint == "rsntpd") {
+                                        while (com == "si") {
+                                            comint = "exit";
+                                            cout << "Inserisci un comando:" << endl;
+                                            cin >> com;
+                                        }
+                                        while (com == "no") {
+                                            cout << "Digita un testo." << endl;
+                                            cin >> file1;
+                                            cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                            cin >> com;
+                                        }
+                                    }
+                                    comint = "rspgrm";
+                                } else {
+                                    if (com == "nuovo") {
+                                        cout << "Digita un testo." << endl;
+                                        cin >> file1;
+                                        cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                        cin >> com;
+                                        comint = "rsntpd";
+                                        while (comint == "rsntpd") {
+                                            while (com == "si") {
+                                                comint = "exit";
+                                                cout << "Inserisci un comando:" << endl;
+                                                cin >> com;
+                                            }
+                                            while (com == "no") {
+                                                cout << "Digita un testo." << endl;
+                                                cin >> file1;
+                                                cout << "Testo salvato. Vuoi chiudere il programma?" << endl;
+                                                cin >> com;
+                                            }
+                                        }
+                                        comint = "rspgrm";
+                                    } else {
+                                        cout << "Comando non implementato." << endl;
+                                    }
+                                }
+                            }
+                            while (com == "help") {
+                                cout << "ver - informazioni sul sistema operativo    help - elenco dei comandi    notepad - semplice editor di testo    shutdown - arresta il sistema  " << endl;
+                                cout << "Inserisci un comando:" << endl;
+                                cin >> com;
+                            }
+                            while (com == "ver") {
+                                cout << "Flowgorithm OS 1.0  ALL RIGHTS RESERVED" << endl;
+                                cout << "Inserisci un comando:" << endl;
+                                cin >> com;
+                            }
+                            while (com == "shutdown") {
+                                cout << "Arresto del sistema" << endl;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } else {
+        if (sel == 1) {
+            cout << "debug mode" << endl;
+            cout << "Flowgorithm OS 1.0" << endl;
+            cout << "Per visualizzare la lista dei comandi digita help." << endl;
+            cout << "Per visualizzare il menu start, digita start menu." << endl;
+            cout << "Inserisci un comando:" << endl;
+            cin >> com;
+            if (com == "ver") {
+                cout << "Flowgorithm OS 1.0  ALL RIGHTS RESERVED" << endl;
+            } else {
+                if (com == "help") {
+                    cout << "ver - informazioni sul sistema operativo    help - elenco dei comandi    notepad - semplice editor di testo    shutdown - arresta il sistema  " << endl;
+                } else {
+                    if (com == "start menu") {
+                        cout << "Start    Notepad    Arresta il sistema  " << endl;
+                        cin >> com;
+                        if (com == "Notepad") {
+                            cout << "Flowpad 1.0" << endl;
+                            cout << "Vuoi aprire un file oppure partire da zero?  digita apri per aprire un file, altrimenti nuovo." << endl;
+                            cin >> com;
+                            if (com == "apri") {
+                                cout << file1 << endl;
+                            } else {
+                                if (com == "nuovo") {
+                                    cout << "Digita un testo." << endl;
+                                    cin >> file1;
+                                } else {
+                                    cout << "Comando non implementato." << endl;
+                                }
+                            }
+                        } else {
+                            if (com == "Arresta il sistema") {
+                                cout << "Arresto del sistema" << endl;
+                            } else {
+                                cout << "Non presente in lista." << endl;
+                            }
+                        }
+                    }
+                    if (com == "notepad") {
+                        cout << "Flowpad 1.0" << endl;
+                        cout << "Vuoi aprire un file oppure partire da zero?  digita apri per aprire un file, altrimenti nuovo." << endl;
+                        cin >> com;
+                        if (com == "apri") {
+                            cout << file1 << endl;
+                        } else {
+                            if (com == "nuovo") {
+                                cout << "Digita un testo." << endl;
+                                cin >> file1;
+                            } else {
+                                cout << "Comando non implementato." << endl;
+                            }
+                        }
+                    } else {
+                        if (com == "shutdown") {
+                            cout << "Arresto del sistema" << endl;
+                        } else {
+                            cout << "Comando non implementato." << endl;
+                        }
+                    }
+                }
+            }
+        } else {
+            if (sel == 2) {
+            } else {
+                cout << "Comando non implementato." << endl;
+            }
+        }
+    }
+    return 0;
+}
+
+// The following implements type conversion functions.
+string toString (double value) { //int also
+    stringstream temp;
+    temp << value;
+    return temp.str();
+}
+
+int toInt (string text) {
+    return atoi(text.c_str());
+}
+
+double toDouble (string text) {
+    return atof(text.c_str());
+}
