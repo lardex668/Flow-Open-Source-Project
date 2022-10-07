@@ -8,7 +8,7 @@ Questo è un progetto open source che implica la costruzione di programmi su Flo
 
 Flowgorithm OS fa parte del FOSP, Flow Open Source Project.
 
-Questo sistema operativo si ispira a MS-DOS (essendo a riga di comando), Windows (programmi con nomi uguali a quelli di windows e stesse funzionalità) e Linux (livecd).
+Questo sistema operativo si ispira a MS-DOS (essendo a riga di comando), Windows (programmi con nomi uguali a quelli di windows con stesse funzionalità, estensioni dei file eseguibili uguali a quelle di windows, stesso vale per i file di sistema) e Linux (livecd), quindi è principalmente React OS con una GUI a riga di comando, ma non è possibile portare un programma di Windows preso da qualunque fonte su Flowgorithm OS.
 
 # Flowgorithm OS 1.0
 
