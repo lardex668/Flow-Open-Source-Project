@@ -28,3 +28,7 @@ Antonio Larducci.
 
 
 P.S. E' in arrivo la Developers Edition, con strumenti per gli sviluppatori! E Flowgorithm OS Setup diventerà "FBM", "Flowgorithm OS Boot Manager".
+
+# Flowgorithm OS 2.0
+
+Coming soon...
