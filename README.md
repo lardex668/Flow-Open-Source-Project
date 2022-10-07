@@ -8,6 +8,8 @@ Questo è un progetto open source che implica la costruzione di programmi su Flo
 
 Flowgorithm OS fa parte del FOSP, Flow Open Source Project.
 
+# Flowgorithm OS 1.0
+
 Questo sistema operativo si ispira a MS-DOS (essendo a riga di comando), Windows (notepad e start menu) e Linux (livecd).
 
 Flowpad (notepad) è un basicissimo editor di testo, dove se scrivi qualcosa viene salvato in memoria finchè non scegli "nuovo".
