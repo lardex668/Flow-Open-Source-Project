@@ -1,7 +1,6 @@
 # Flow Open Source Project
 
-Grazie per esserti interessato al Flow Open Source Project (FOSP)!
-Questo è un progetto open source che implica la costruzione di programmi su Flowgorithm! (es. Flowgorithm OS).
+Questo progetto è stato abbandonato. Vedi Windows Tiny Core OS: https://github.com/lardex668/Windows-Tiny-Core-OS
 
 
 # Flowgorithm OS
@@ -27,8 +26,3 @@ il vostro caro sviluppatore,
 Antonio Larducci.
 
 
-P.S. E' in arrivo la Developers Edition, per gli sviluppatori! E Flowgorithm OS Setup diventerà "FBM", "Flowgorithm OS Boot Manager".
-
-# Flow OS 2.0
-
-In arrivo prossimamente..
